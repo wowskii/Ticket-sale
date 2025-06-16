@@ -20,3 +20,25 @@ ul {
     list-style-type: none;
     padding: 10px;
 }
+
+.itemBox {
+    display:block;
+    width: 20%;
+    padding: 10px;
+    background-color:bisque;
+    font-weight: bold;
+    transition: background-color 0.3s, ease;
+}
+
+.itemBox.dark-mode {
+    background-color: #444;
+    color: #f0f0f0;
+}
+
+.itemBox:hover {
+    background-color: #f08080;
+}
+
+.itemBox.dark-mode:hover {
+    background-color: #555;
+}

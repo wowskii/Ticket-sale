@@ -4,7 +4,7 @@ document.getElementById('mode-toggle').addEventListener('click', function() {
 
 //Dynamic lists
 
-
+//Initialising variables
 const itemInput = document.getElementById('itemInput');
 const addProjectButton = document.getElementById('addProjectButton');
 const dynamicList = document.getElementById('dynamicList');
@@ -16,9 +16,11 @@ function addItem() {
     if (itemText) {
         const li = document.createElement('li');
         li.textContent = itemText;
+        li.className = "itemBox";
         dynamicList.appendChild(li);
         itemInput.value = '';
     }
 }
 
+//Button
 addProjectButton.addEventListener('click', addItem);
