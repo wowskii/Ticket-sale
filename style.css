@@ -28,18 +28,18 @@ ul {
     padding-top: 5px;
     background-color:bisque;
     font-weight: bold;
-    transition: background-color 0.3s, ease;
-}
-
-.itemBox.dark-mode {
-    background-color: #444;
-    color: #f0f0f0;
+    transition: background-color 0.3s ease;
 }
 
 .itemBox:hover {
     background-color: #f08080;
 }
 
-.itemBox.dark-mode:hover {
+body.dark-mode .itemBox {
+    background-color: #444;
+    color: #f0f0f0;
+}
+
+body.dark-mode .itemBox:hover {
     background-color: #555;
 }
