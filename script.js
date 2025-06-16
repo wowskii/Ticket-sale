@@ -17,7 +17,18 @@ function addItem() {
         const li = document.createElement('li');
         li.textContent = itemText;
         li.className = "itemBox";
+
+        //Create anchor element
+        const link = document.createElement('a');
+        link.href = '#';
+
+        link.className = 'itemLink'
+        link.tabIndex = 0;
+
+        li.appendChild(link);
         dynamicList.appendChild(li);
+
+        //Clear the input fields
         itemInput.value = '';
     }
 }

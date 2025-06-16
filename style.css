@@ -21,11 +21,15 @@ ul {
     padding: 10px;
 }
 
+li {
+    margin: 5px 0;
+}
+
 .itemBox {
     display:block;
     width: 20%;
     padding: 10px;
-    padding-top: 5px;
+    border-radius: 10px;
     background-color:bisque;
     font-weight: bold;
     transition: background-color 0.3s ease;
@@ -42,4 +46,15 @@ body.dark-mode .itemBox {
 
 body.dark-mode .itemBox:hover {
     background-color: #555;
+}
+
+.itemLink {
+    display: block; /* Make the link a block element */
+    height: 100%; /* Full height of the box */
+    width: 100%; /* Full width of the box */
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color */
+    background-color: inherit; /* Inherit background color */
+    padding: 10px; /* Inner padding */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
 }
